@@ -29,10 +29,11 @@
          - Як ховати чек: display vs appearance vs visually-hidden  
          - Оформлення через border та background-origin  
      - Кастомні чеки від Макєєва
-- [Кастомные чеки от Макеева](https://youtu.be/E6kLaaQFctU)
+
 - Кастомные чеки от Макеева
 - Декоративні етикетки та іконки, селектори +, ~ і :focus-within. Плейсхолдер з порожнім рядком.  
-     - Кастомні чекбокси та радіокнопки:  
-         - Як вирізати значок  
-         - Як ховати чек: display vs appearance vs visually-hidden  
-         - Оформлення через border та background-origin
+- Кастомні чекбокси та радіокнопки:  
+  - Як вирізати значок  
+  - Як ховати чек: display vs appearance vs visually-hidden  
+  - Оформлення через border та background-origin
+- [Кастомні чеки від Макєєва](https://youtu.be/E6kLaaQFctU)
