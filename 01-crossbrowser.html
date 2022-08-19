@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form-styling</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <!-- Підтверджуємо політику конфіденційності
+We confirm the privacy policy -->
+
+  <body>
+    <!-- read guide!!! -->
+    <!-- ** text. tel, email fields: Виводимо ім'я, телефон та пошту
+Display name, phone number and email -->
+    <form class="form js-speaker-form">
+      <div class="form-field">
+        <h2>Display name, phone number and email</h2>
+
+        <label for="user-first-name" class="form-label">Ім'я: </label>
+        <!-- autofocus only on one element on page -->
+        <input
+          class="form-input"
+          type="text"
+          name="user-first-name"
+          id="user-first-name"
+          autofocus
+          placeholder="Your first name"
+        />
+      </div>
+      <div class="form-field">
+        <label for="user-last-name" class="form-label">Прізвище: </label>
+        <input
+          type="text"
+          name="user-last-name"
+          id="user-last-name"
+          placeholder="Your Last name"
+        />
+      </div>
+      <div class="form-field">
+        <label for="tel" class="form-label">Телефон: </label>
+        <input
+          type="tel"
+          name="phone"
+          id="tel"
+          autocomplete="on"
+          placeholder="+380 99-999-9999"
+        />
+      </div>
+      <div class="form-field">
+        <label for="email" class="form-label">Ел.пошта: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="mymail@example.com"
+        />
+      </div>
+      <div class="form-field">
+        <label for="password" class="form-label">Пароль: </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          autocomplete="off"
+          placeholder="************"
+        />
+      </div>
+      <div class="form-field">
+        <!-- ** Checkboxes: Вибираємо теми, на які хочемо робити доповідь
+Select the topics you would like to report on -->
+        <p>Select the topics you would like to report on</p>
+        <p>many of many</p>
+        <!-- name must be the same not topic-1, topic-2, topic-3 ect. -->
+        <!-- fieldset - can't use flexbox so use div -->
+        <div role="group" class="group">
+          <h2 class="group-title">Тема доповіді</h2>
+          <ul class="topic-options">
+            <li class="topic-options-item">
+              <input
+                type="checkbox"
+                class="topic-options-checkbox"
+                name="topic"
+                value="HTML"
+                id="html"
+                checked
+              />
+              <label for="html" class="topic-options-label">HTML</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="topic-options-checkbox"
+                name="topic"
+                value="CSS"
+                id="css"
+              />
+              <label for="css" class="topic-options-label">CSS</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="topic-options-checkbox"
+                name="topic"
+                value="javaScript"
+                id="javascript"
+              />
+              <label for="javascript" class="topic-options-label"
+                >JavaScript</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ** Radio button: Вибираємо свій рівень розробника
+Choose your developer level -->
+      <div class="form-field">
+        <p>Choose your developer level</p>
+        <p>one of many</p>
+        <div role="group" class="group">
+          <h2 class="group-title">Виберіть свій рівень розробника</h2>
+          <ul class="developer-levels">
+            <li class="developer-levels-item">
+              <input
+                type="radio"
+                class="developer-levels-radio"
+                name="level"
+                value="junior"
+                id="junior"
+              />
+              <label for="junior" class="form-label">Junior</label>
+            </li>
+            <li class="developer-levels-item">
+              <input
+                type="radio"
+                class="developer-levels-radio"
+                name="level"
+                value="middle"
+                id="middle"
+                checked
+              />
+              <label for="middle" class="form-label">Middle</label>
+            </li>
+            <li class="developer-levels-item">
+              <input
+                type="radio"
+                class="developer-levels-radio"
+                name="level"
+                value="senior"
+                id="senior"
+              />
+              <label for="senior" class="form-label">Senior</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <!-- Вибираємо час доповіді https://caniuse.com/#search=datetime-local
+      Choose the time of the report https://caniuse.com/#search=datetime-local -->
+        <!-- <p>Choose date</p> -->
+        <label for="date" class="form-label">Choose Date: </label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          class="date"
+          min="2022-09-01"
+          max="2022-09-07"
+        />
+      </div>
+      <div class="form-field">
+        <!-- <p>Choose time</p> -->
+        <label for="time" class="form-label">Choose Time: </label>
+        <input type="time" name="time" id="time" min="10:30" max="12:12" />
+      </div>
+      <div class="form-field">
+        <!-- <p>Choose Date and Time</p> -->
+        <label for="datetime" class="form-label">Choose Date and Time: </label>
+        <input
+          type="datetime-local"
+          name="datetime"
+          id="datetime"
+          value="2022-09-05T12:30"
+          min="2022-09-01T10:10"
+          max="2022-09-07T12:12"
+        />
+      </div>
+      <div class="form-field">
+        <!-- ** Select: Вибираємо, на кого орієнтована доповідь
+Choose who the report is aimed at -->
+        <!-- The second value will be selected initially -->
+        <label for="choice" class="form-label">For: </label>
+        <select name="choice" id="choice">
+          <option value="boss">Boss</option>
+          <option value="developer" selected>Developers</option>
+          <option value="front-end">Front End</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <!-- Завантажуємо презентацію
+Loading the presentation -->
+        <!-- <p>Load file for presentation</p> -->
+        <label for="pdf" class="form-label">Load presentation file</label>
+        <input type="file" name="pdf" id="pdf" />
+      </div>
+      <div class="form-field">
+        <!-- Залишаємо коментар
+Leave a comment -->
+        <!-- <p>Leave a comment</p> -->
+        <label for="comments" class="form-label">Comments: </label>
+        <textarea
+          name="comments"
+          id="comments"
+          class="text-comments"
+          rows="5"
+          placeholder="Leave a comment..."
+        ></textarea>
+      </div>
+
+      <!-- ** button OR input button: Вибираємо кнопки
+Select the buttons -->
+      <button type="submit">Відправити заявку</button>
+      <!-- <input type="button" value="Відправити заявку" /> Difficult to use css -->
+    </form>
+    <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
+  </body>
+</html>
