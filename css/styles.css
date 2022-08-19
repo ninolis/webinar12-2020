@@ -1,0 +1,135 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form {
+  width: 600px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+.form {
+  width: 600px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.form-field {
+  /* outline: 1px dotted blue; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* .form-field input {
+  width: 100%;
+} */
+.form-field label {
+  margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field select {
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+
+.form-field input::placeholder {
+  color: #2a2a2a;
+}
+
+.group {
+}
+
+.group-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.topic-options {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.topic-options li {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* .topic-options input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+} */
+
+.topic-options-item {
+  /* background-color: blueviolet; */
+}
+
+.topic-options-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.topic-options label {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.developer-levels-item {
+  margin-bottom: 5px;
+}
+
+.developer-levels-radio {
+  margin-left: 15px;
+}
+
+.form .date {
+  border-color: yellow;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+  background-color: pink;
+}
+
+.text-comments {
+  padding: 8px;
+  font-size: 40px;
+  color: #ffffff;
+  background-color: blueviolet;
+}
+
+/* <a> elements with a title attribute */
+/* not for placeholder!!! */
+/* textarea::placeholder {
+  color: #ffffff;
+} */
+/* a[title] {
+  color: purple;
+} */
+
+textarea::placeholder {
+  color: #ffffff;
+}
+
+/* .form-field input::placeholder {
+  color: #2a2a2a;
+} */
