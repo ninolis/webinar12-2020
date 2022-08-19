@@ -10,17 +10,7 @@
      - Кастомні чеки від Макєєва
 
 
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
 
--OR-
-
- Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
-          - Bullet list item 2 
 
 Особливості використання плейсхолдера та підпис (label)  
      - Декоративні етикетки та іконки, селектори +, ~ і :focus-within. Плейсхолдер з порожнім рядком.  
